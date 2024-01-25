@@ -2,8 +2,8 @@ const mongoose = require('mongoose')
 
 const userSchema = new mongoose.Schema(
   {
-    id: {type: String},
-    nome: {
+    id: { type: mongoose.Schema.Types.ObjectId },
+    name: {
       type: String,
       required: [true, "O nome do(a) autor(a) é obrigatório"]
     },
